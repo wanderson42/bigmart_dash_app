@@ -1,0 +1,5 @@
+/* Estilo para a opção de navegação ativa */
+.nav-link.active {
+    color: #007BFF; /* Cor do texto (azul) */
+    border-bottom: 2px solid #007BFF; /* Cor do sublinhado (azul) */
+}
