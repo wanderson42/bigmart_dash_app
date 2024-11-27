@@ -3,7 +3,10 @@
 =======================================
 
 Essa aplicação Dash foi desenvolvida no VScode, cujo o desenvolvimento desse projeto na íntegra pode ser acessada no arquivo DashApp_BigMartSales.ipynb. 
-Por conveniência essa aplicação pode ser facilmente executada no Google Colab. Realizando o upload do arquivo DashApp_BigMartSales.ipynb e executando as células da seção 5.1 e 5.3.
+Por conveniência essa aplicação pode ser facilmente executada no Google Colab, realizando o upload do arquivo DashApp_BigMartSales.ipynb e executando as células da seção 5.1 e 5.3.
+- As células da seção 5.1 realizam a instalação das dependencias e importação das bibliotecas.
+- As células da seção 5.2 contemplam os arquivos helpers.py e app.py. Ao executa-las em ordem a aplicação é renderizada no padrão Dash app.run com redirecionamento automático. 
+No caso iniciada no localhost (geralmente no endereço http://127.0.0.1:8050). E ao clicarmos no endereço o Colab detecta que o servidor foi iniciado e cria um link no formato https://<túnel>-colab.googleusercontent.com para acesso público.
 
 Para rodar essa aplicação Dash em uma máquina local, siga os passos abaixo:
 
