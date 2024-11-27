@@ -2,6 +2,9 @@
   INSTRUÇÕES DE INSTALAÇÃO
 =======================================
 
+Essa aplicação Dash foi desenvolvida no VScode, cujo o desenvolvimento desse projeto na íntegra pode ser acessada no arquivo DashApp_BigMartSales.ipynb. 
+Por conveniência essa aplicação pode ser facilmente executada no Google Colab. Realizando o upload do arquivo DashApp_BigMartSales.ipynb e executando as células da seção 5.1 e 5.3.
+
 Para rodar essa aplicação Dash em uma máquina local, siga os passos abaixo:
 
 ------------------------------------------------------
@@ -52,4 +55,6 @@ Isso exibirá uma lista com todas as dependências instaladas no ambiente virtua
 
 ------------------------------------------------------
 Agora você pode rodar a aplicação localmente com a certeza de que tudo está configurado corretamente! 🚀
+
+
 
