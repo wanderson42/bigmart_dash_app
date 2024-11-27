@@ -46,11 +46,11 @@ def text_intro():
 
         html.H5("Descrição dos atributos informativos:"),
         html.Ul([
-            html.Li([html.Strong("Item_Weight:"), " Peso do produto;"]),
+            html.Li([html.Strong("Item_Weight:"), " Peso do produto ;", html.Strong(" (Não considerado nas hipóteses)")]),
             html.Li([html.Strong("Item_Fat_Content:"), " Se o produto é com baixo teor de gordura ou não;"]),
             html.Li([html.Strong("Item_Visibility:"), " A porcentagem da área total de exposição de todos os produtos em uma loja alocada para um produto específico;"]),
             html.Li([html.Strong("Item_Type:"), " O tipo de categoria que o produto pertence;"]),
-            html.Li([html.Strong("Item_MRP:"), " Preço máximo de varejo (preço de lista) do produto;"]),
+            html.Li([html.Strong("Item_MRP:"), " Preço máximo de varejo (preço de lista) do produto;", html.Strong(" (Não considerado nas hipóteses)")]),
             html.Li([html.Strong("Outlet_Establishment_Year:"), " O ano em que a loja foi fundada;"]),
             html.Li([html.Strong("Outlet_Size:"), " O tamanho da loja em termos de área terrestre coberta;"]),
             html.Li([html.Strong("Outlet_Location_Type:"), " O tipo de cidade em que a loja está localizada;"]),
@@ -66,7 +66,7 @@ def text_intro():
         html.H4("Código GitHub"),
         html.P([
             "Interessado no desenvolvimento do projeto? ",
-            html.A("Clique aqui para ver o código fonte!", href="https://github.com/seu-usuario/seu-repositorio", target="_blank"),
+            html.A("Clique aqui para ver o código fonte!", href="https://github.com/wanderson42/bigmart_dash_app.git", target="_blank"),
             " Para ter acesso ao projeto na íntegra, que contempla desde uma minuciosa análise de dados, bem como o treinamento de um modelo random forest confiável para previsão de vendas, e não menos importante a construção desta aplicação web."
         ])
     ])
@@ -159,7 +159,7 @@ def make_predictions(user_data):
     '''
     # Caminho para o modelo treinado
     location = os.getcwd()
-    path_model = os.path.join(location, 'Ridge_Regression_best_model.pkl')
+    path_model = os.path.join(location, 'Linear_Regression_best_model.pkl')
     lr_model = load(path_model)
 
     # Se for uma previsão individual o input sera um dicionário:
